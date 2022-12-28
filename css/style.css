@@ -129,6 +129,7 @@ main{
 .comida-rapida img{
     width: 300px;
     height: 200px;
+    object-fit: cover;
 }
 .comida-rapida div{
     border: 2px dotted black;
@@ -148,28 +149,35 @@ main{
 }
  /*desayuno*/
 
- .churros div{
+.churros div{
+    border-radius: 5%;
+    background-color: rgb(162, 148, 175);
     border: 2px dotted black;
-    margin: 10px;
+    margin: 5px;
     text-align: center
- }
- .churros img{
+    
+}
+.churros img{
     width: 300px;
- } 
- .churros h2{
+    height: 300px;
+    object-fit: cover;
+} 
+.churros h2{
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     
- }  
- .churros div ul li{
+}  
+.churros div ul li{
     list-style: none;
- }
- .churros{
+}
+.churros{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+
      
-  }
+}
  .video{
     
     text-align: center;
@@ -182,7 +190,32 @@ main{
     font-size: 40px
     
 
- }   
+ }  
+ /*------prodcuto------*/
+.producto-main div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+   
+}
+.producto-main div{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+transition: 1sg;
+}
+.producto-main div:hover{
+    transform: scale(1.1);
+}
+.producto-main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    gap: 10px;
+    
+
+}
 /*------contacto------*/
 .titulo-formulario{
     font-family: 'Poppins', sans-serif;
@@ -224,10 +257,23 @@ footer{
     }
     
 }
-
+@media screen and (max-width:950px){
+    .churros{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+    }
+    
+}
 @media screen and (max-width:640px){
+    .churros{
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: auto;
+
+    }
     .comida-rapida{
         grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: auto;
+        
     }
 }
 
@@ -259,5 +305,5 @@ footer{
     .formulario{
         text-align: center;
     }
-    
+
 }
