@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Prolijos</title>
 </head>
+
 <body>
     <header>
-        <h1>Prolijos & Jeque's FastFood</h1>
-        <nav>
-            
-                <ul>
-                    <li><a href="./index.html">inicio</a></li>
-                    <li><a href="./pages/jequesfastfood.html">Jeque's FastFood</a></li>
-                    <li><a href="./pages/contacto.html">contacto</a></li>
-                    <li><a href="./pages/desayunos.html">desayuno</a></li>
-                    <li><a href="./pages/productos.html">productos</a></li>
-                </ul>
-            
+        <nav class="navbar navbar-expand-lg navbar-light bg-yellow-100">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./img/hogar.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Comidas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./pages/desayunos.html">Desayunos</a></li>
+                                <li><a class="dropdown-item" href="./pages/jequesfastfood.html">jequesfastfood</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -31,47 +57,57 @@
 
         </section>
         <section class="articulos">
-                
-                <div>
-                    <h3>Combos 1</h3>
-                    <img src="./img/arepaconsalsa.jpg" alt="arepas-con-salsa">
-                    <p class="descripcion">3 Arepas con salsa y relleno a eleccion</p>
-                    <a href="./pages/jequesfastfood.html"> <button>Comprar</button></a>
-                </div>  
-                    
-                <div>
-                    <h3>Combo 2</h3>
-                    <img src="./img/19657061-café-con-churros (1).webp" alt="churros-con-cafe">
-                    <p class="descripcion">3 Churros s/relleno con cafe</p>
-                    <a href="./pages/desayunos.html"><button>Comprar</button></a>
-                </div>
-                
-                <div>
-                    <h3>Combo 3</h3>
-                    <img src="./img/Empanadas-venezolanas-de-queso.jpg" alt="empandas-venezolanas">
-                    <p class="descripcion">3 empanadas con relleno a eleccion</p>
-                    <a href="./pages/jequesfastfood.html"><button>Comprar</button></a>
-                </div>
-            
+
+            <div>
+                <h3>Combos 1</h3>
+                <img src="./img/arepaconsalsa.jpg" alt="arepas-con-salsa">
+                <p class="descripcion">3 Arepas con salsa y relleno a eleccion</p>
+                <a href="./pages/jequesfastfood.html"> <button>Comprar</button></a>
+            </div>
+
+            <div>
+                <h3>Combo 2</h3>
+                <img src="./img/19657061-café-con-churros (1).webp" alt="churros-con-cafe">
+                <p class="descripcion">3 Churros s/relleno con cafe</p>
+                <a href="./pages/desayunos.html"><button>Comprar</button></a>
+            </div>
+
+            <div>
+                <h3>Combo 3</h3>
+                <img src="./img/Empanadas-venezolanas-de-queso.jpg" alt="empandas-venezolanas">
+                <p class="descripcion">3 empanadas con relleno a eleccion</p>
+                <a href="./pages/jequesfastfood.html"><button>Comprar</button></a>
+            </div>
+
         </section>
-        
+
         <section class="video">
             <div>
-            <p>Como hacemos nuestros Churros</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/PhYdLGZyJQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div> 
+                <p>Como hacemos nuestros Churros</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PhYdLGZyJQE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
         </section>
     </main>
 
 
     <footer>
-            <div>
-                <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt="icono de facebook"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt="icono de instagram"></a>
-                <a href="https://twitter.com/?lang=es" target="_blank"><img src="./img/gorjeo.png" alt="icono de twitter"></a>
-            </div>
-        
-        
+        <div>
+            <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png"
+                    alt="icono de facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png"
+                    alt="icono de instagram"></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"><img src="./img/gorjeo.png"
+                    alt="icono de twitter"></a>
+        </div>
+
+
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
