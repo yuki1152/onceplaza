@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,700;1,200;1,700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+header {
+  background: linear-gradient(#f0f0c0, #f1f165); }
+  header nav div ul {
+    color: black;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly; }
+    header nav div ul li {
+      display: inline-block;
+      margin: 10px 5px 10px 5px;
+      transition: 1sg; }
+      header nav div ul li:hover {
+        transform: scale(1.2); }
+  header nav div a {
+    text-decoration: none;
+    color: black; }
+    header nav div a img {
+      width: 50px; }
+
+main {
+  background-color: antiquewhite; }
+
+main .hero {
+  background-image: url(../img/istockphoto-670321148-170667a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 30px;
+  width: 100%;
+  height: 80vh;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  display: inline-block; }
+  main .hero div h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    margin-top: 10px; }
+
+main .articulos {
+  display: flex;
+  justify-content: space-around;
+  background-color: #eeeed6;
+  background-size: cover;
+  align-items: center; }
+  main .articulos div {
+    background-color: #a294af;
+    border: 2px dotted black;
+    margin: 100px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5%;
+    transition: 2sg; }
+    main .articulos div:hover {
+      transform: scale(1.1); }
+    main .articulos div h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 40px; }
+    main .articulos div img {
+      width: 300px;
+      height: 200px; }
+    main .articulos div .descripcion {
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      padding: 10px; }
+
+main .video {
+  text-align: center; }
+  main .video div p {
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px; }
+
+main .comida-rapida {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto; }
+  main .comida-rapida div {
+    border: 2px dotted black;
+    margin: 10px;
+    text-align: center;
+    border-radius: 15%;
+    background-color: #a294af; }
+    main .comida-rapida div h2 {
+      font-weight: 700;
+      font-family: 'Poppins', sans-serif;
+      font-size: 25px; }
+    main .comida-rapida div img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover; }
+    main .comida-rapida div ul li {
+      list-style: none; }
+
+main .churros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto; }
+  main .churros div {
+    border-radius: 5%;
+    background-color: #a294af;
+    border: 2px dotted black;
+    margin: 5px;
+    text-align: center; }
+    main .churros div h2 {
+      font-weight: 700;
+      font-family: 'Poppins', sans-serif;
+      font-size: 25px; }
+    main .churros div img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover; }
+    main .churros div ul li {
+      list-style: none; }
+
+main .producto-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  gap: 10px; }
+  main .producto-main div {
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    transition: 1sg; }
+    main .producto-main div:hover {
+      transform: scale(1.1); }
+    main .producto-main div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+main .titulo-formulario {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 10px; }
+
+main .formulario {
+  font-family: 'Poppins', sans-serif;
+  border: 2px dotted black;
+  display: inline-block;
+  padding: 10px; }
+
+footer {
+  background-color: azure;
+  text-align: right;
+  padding: 30px;
+  margin: 0px 10px; }
+  footer div img {
+    width: 50px;
+    margin: 0px 10px; }
+
+@media screen and (max-width: 1405px) {
+  main .producto-main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 250px; }
+  main .articulos {
+    flex-direction: column;
+    justify-content: center; } }
+
+@media screen and (max-width: 1100px) {
+  main .comida-rapida {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 950px) {
+  main .churros {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto; } }
+
+@media screen and (max-width: 670px) {
+  main .producto-main {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 200px; } }
+
+@media screen and (max-width: 640px) {
+  main .churros {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto; }
+  main .comida-rapida {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto; } }
+
+@media screen and (max-width: 610px) {
+  header nav ul {
+    flex-direction: column; } }
+
+@media screen and (max-width: 560px) {
+  .video div iframe {
+    width: auto; }
+  footer {
+    text-align: center;
+    background-size: cover; } }
+
+@media screen and (max-width: 490px) {
+  .formulario {
+    text-align: center; } }
+
+@media screen and (max-width: 485px) {
+  .formulario {
+    text-align: center; } }
