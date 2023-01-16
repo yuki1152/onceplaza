@@ -1,8 +1,6 @@
 main {
     .churros {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: auto;
+        @extend %grid;
 
         div {
             border-radius: 5%;
@@ -12,9 +10,7 @@ main {
             text-align: center;
 
             h2 {
-                font-weight: 700;
-                font-family: 'Poppins', sans-serif;
-                font-size: 25px;
+                @include fuente (700, 'Poppins' sans-serif, 25px);
 
             }
 

@@ -1,0 +1,10 @@
+%grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+};
+@mixin fuente ($weight, $family, $size){
+    font-weight: $weight;
+    font-family: $family;
+    font-size: $size;
+};

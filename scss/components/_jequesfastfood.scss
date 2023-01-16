@@ -1,8 +1,6 @@
 main{
-    .comida-rapida{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
+    .comida-rapida{ 
+        @extend %grid;
         div{
             border: 2px dotted black;
             margin: 10px;
@@ -10,9 +8,7 @@ main{
             border-radius: 15%;
             background-color: rgb(162, 148, 175);
             h2{
-                font-weight: 700;
-                font-family: 'Poppins', sans-serif;
-                font-size: 25px; 
+                @include fuente (700, 'Poppins' sans-serif, 25px);
                 }
             img{
                 width: 300px;

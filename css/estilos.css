@@ -4,6 +4,11 @@
   padding: 0px;
   box-sizing: border-box; }
 
+main .comida-rapida, main .churros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto; }
+
 header {
   background: linear-gradient(#f0f0c0, #f1f165); }
   header nav div ul {
@@ -84,47 +89,39 @@ main .video {
     font-family: 'Poppins', sans-serif;
     font-size: 40px; }
 
-main .comida-rapida {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto; }
-  main .comida-rapida div {
-    border: 2px dotted black;
-    margin: 10px;
-    text-align: center;
-    border-radius: 15%;
-    background-color: #a294af; }
-    main .comida-rapida div h2 {
-      font-weight: 700;
-      font-family: 'Poppins', sans-serif;
-      font-size: 25px; }
-    main .comida-rapida div img {
-      width: 300px;
-      height: 200px;
-      object-fit: cover; }
-    main .comida-rapida div ul li {
-      list-style: none; }
+main .comida-rapida div {
+  border: 2px dotted black;
+  margin: 10px;
+  text-align: center;
+  border-radius: 15%;
+  background-color: #a294af; }
+  main .comida-rapida div h2 {
+    font-weight: 700;
+    font-family: "Poppins" sans-serif;
+    font-size: 25px; }
+  main .comida-rapida div img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover; }
+  main .comida-rapida div ul li {
+    list-style: none; }
 
-main .churros {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: auto; }
-  main .churros div {
-    border-radius: 5%;
-    background-color: #a294af;
-    border: 2px dotted black;
-    margin: 5px;
-    text-align: center; }
-    main .churros div h2 {
-      font-weight: 700;
-      font-family: 'Poppins', sans-serif;
-      font-size: 25px; }
-    main .churros div img {
-      width: 300px;
-      height: 300px;
-      object-fit: cover; }
-    main .churros div ul li {
-      list-style: none; }
+main .churros div {
+  border-radius: 5%;
+  background-color: #a294af;
+  border: 2px dotted black;
+  margin: 5px;
+  text-align: center; }
+  main .churros div h2 {
+    font-weight: 700;
+    font-family: "Poppins" sans-serif;
+    font-size: 25px; }
+  main .churros div img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; }
+  main .churros div ul li {
+    list-style: none; }
 
 main .producto-main {
   display: grid;
