@@ -49,10 +49,35 @@ main .hero {
   color: black;
   display: inline-block; }
   main .hero div h2 {
+    animation-name: slidein;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: initial;
+    animation-delay: 1s;
+    animation-iteration-count: initial;
+    color: blue;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     font-size: 40px;
     margin-top: 10px; }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; } }
+  main .hero div p {
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: initial;
+    animation-delay: 1s;
+    animation-iteration-count: initial;
+    color: blue; }
+
+@keyframes slide {
+  from {
+    margin-right: 100%;
+    width: 300%; } }
 
 main .articulos {
   display: flex;
