@@ -49,15 +49,19 @@ main .hero {
   color: black;
   display: inline-block; }
   main .hero div h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 0;
+    text-shadow: -3px -3px 3px #0000DF, 3px -3px 3px #0000DF, -3px 3px 3px #0000DF, 3px 3px 3px #0000DF;
     animation-name: slidein;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-direction: initial;
     animation-delay: 1s;
     animation-iteration-count: initial;
-    color: blue;
     font-family: 'Poppins', sans-serif;
-    font-weight: 200;
+    font-weight: 700;
     font-size: 40px;
     margin-top: 10px; }
 
@@ -66,13 +70,19 @@ main .hero {
     margin-left: 100%;
     width: 300%; } }
   main .hero div p {
+    text-align: center;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-shadow: -3px -3px 3px #0000DF, 3px -3px 3px #0000DF, -3px 3px 3px #0000DF, 3px 3px 3px #0000DF;
     animation-name: slide;
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-direction: initial;
     animation-delay: 1s;
-    animation-iteration-count: initial;
-    color: blue; }
+    animation-iteration-count: initial; }
 
 @keyframes slide {
   from {
