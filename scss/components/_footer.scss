@@ -1,6 +1,10 @@
 footer{
-    background-color: azure;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     text-align: right;
+    background-color: azure;
     padding: 30px;
     margin: 0px 10px;
     div{
